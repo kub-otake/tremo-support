@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — TREMO</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #111111;
+      --surface: #1c1c1c;
+      --border: #2a2a2a;
+      --accent: #25A244;
+      --text: #e8e8e8;
+      --text-muted: #888;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header a.back-link {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    header a.back-link:hover { text-decoration: underline; }
+
+    .app-icon-sm {
+      width: 56px;
+      height: 56px;
+      border-radius: 13px;
+      display: block;
+      margin: 0 auto 0.75rem;
+    }
+
+    .app-logo-sm {
+      height: 26px;
+      width: auto;
+      display: block;
+      margin: 0 auto 0.25rem;
+    }
+
+    header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    section { margin-bottom: 2.5rem; }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      padding: 0.3rem 0 0.3rem 1.2rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-box p { margin: 0; }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    footer a { color: var(--text-muted); text-decoration: underline; }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="back-link">← サポートページへ戻る</a>
+  <img src="images/tremo-logo-wstr.png" alt="TREMO" class="app-logo-sm">
+  <h1>プライバシーポリシー</h1>
+</header>
+
+<main>
+
+  <section>
+    <h2>はじめに</h2>
+    <p>本プライバシーポリシーは、kubotake（以下「開発者」）が提供するiOSアプリケーション「TREMO」（以下「本アプリ」）における、利用者の情報の取り扱いについて説明するものです。</p>
+    <p>本アプリをご利用いただく前に、本ポリシーをお読みください。</p>
+  </section>
+
+  <section>
+    <h2>収集する情報</h2>
+    <div class="highlight-box">
+      <p>本アプリは、個人情報を含む一切のデータを収集・取得しません。</p>
+    </div>
+    <p>トレーニング記録・種目・設定などのデータはすべてお使いのデバイス内にのみ保存され、開発者を含む第三者がアクセスすることは一切ありません。</p>
+    <ul>
+      <li>氏名・メールアドレス等の個人情報: 収集しません</li>
+      <li>位置情報: 収集しません</li>
+      <li>デバイス識別子・広告ID: 収集しません</li>
+      <li>利用ログ・クラッシュレポート: 外部への送信はしません</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>データの保存場所</h2>
+    <p>本アプリが生成・保存するすべてのデータ（トレーニング記録、テンプレート、設定等）は、お使いのiOSデバイス内にのみ保存されます。</p>
+    <p>外部サーバー・クラウドサービスへのデータ送信は行っておらず、開発者がこれらのデータを参照・収集することはありません。</p>
+  </section>
+
+  <section>
+    <h2>プッシュ通知</h2>
+    <p>本アプリはプッシュ通知機能を利用します。通知は以下の目的のみに使用します。</p>
+    <ul>
+      <li>セット間の休憩タイマーが終了した際のお知らせ</li>
+    </ul>
+    <p>マーケティング目的・広告目的の通知は一切送信しません。通知の許可はiOSの設定からいつでも変更できます。</p>
+  </section>
+
+  <section>
+    <h2>第三者への提供</h2>
+    <p>開発者は、利用者の情報を第三者に提供・販売・共有することは一切ありません。また、本アプリには第三者の広告SDK・アナリティクスSDKは組み込まれていません。</p>
+  </section>
+
+  <section>
+    <h2>データの削除</h2>
+    <p>本アプリをiOSデバイスからアンインストールすることで、アプリが保存したすべてのデータはデバイスから削除されます。</p>
+    <p>なお、現時点ではアプリ内からのデータエクスポート・バックアップ機能は提供していません。アンインストール前にデータが失われる旨をご了承ください。</p>
+  </section>
+
+  <section>
+    <h2>子ども向けプライバシー</h2>
+    <p>本アプリは13歳未満の方を対象としていません。13歳未満の方の個人情報を意図的に収集することはありません。</p>
+  </section>
+
+  <section>
+    <h2>本ポリシーの変更</h2>
+    <p>本プライバシーポリシーは、必要に応じて更新されることがあります。重要な変更がある場合はアプリのアップデートを通じてお知らせします。</p>
+    <p>最終更新日: 2026年6月1日</p>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するご質問・ご意見は、以下の連絡先までお寄せください。</p>
+    <p>開発者: kubotake<br>
+    メール: <a href="mailto:otakekub@gmail.com">otakekub@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 kubotake &nbsp;|&nbsp; <a href="index.html">サポートページへ戻る</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TREMO サポート</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #111111;
+      --surface: #181818;
+      --border: #252525;
+      --accent: #25A244;
+      --text: #e8e8e8;
+      --text-muted: #777;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-logo {
+      height: 30px;
+      width: auto;
+      display: block;
+      margin: 0 auto 0.3rem;
+    }
+
+    .header-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* ── Section titles ── */
+    h2 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Feature showcases ── */
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+
+    .showcase-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .showcase-card h3 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .showcase-card p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Sub-feature list ── */
+    .sub-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .sub-feature {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.25rem 0.6rem;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; }
+
+    .faq-item { padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+
+    .faq-item dt {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-item dt::before { content: 'Q. '; color: var(--accent); }
+
+    .faq-item dd {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ── Contact ── */
+    .contact {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1rem 1.5rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    footer a { color: var(--text-muted); text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header { gap: 0.75rem; }
+      .showcase-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/tremo-logo-wstr.png" alt="TREMO" class="app-logo">
+  <p class="header-sub">トレーニング記録 iOS アプリ — サポートページ</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>主な機能</h2>
+    <div class="showcase-grid">
+      <div class="showcase-card">
+        <img src="images/screenshot/home.png" alt="セット記録画面">
+        <h3>アクティビティ</h3>
+        <p>ヒートマップやチャートで日々のトレーニング記録を確認</p>
+      </div>
+      <div class="showcase-card">
+        <img src="images/screenshot/register-template.png" alt="テンプレート登録画面">
+        <h3>テンプレート</h3>
+        <p>あなただけのトレーニングメニューを保存</p>
+      </div>
+      <div class="showcase-card">
+        <img src="images/screenshot/graph.png" alt="推移グラフ画面">
+        <h3>推移グラフ</h3>
+        <p>種目ごとの重量推移を折れ線グラフで確認</p>
+      </div>
+      <div class="showcase-card">
+        <img src="images/screenshot/memo.png" alt="メモ画面">
+        <h3>ワークアウト記録</h3>
+        <p>トレーニングの種目、重量、回数を記録</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+    <dl class="faq-list">
+      <div class="faq-item">
+        <dt>データはどこに保存されますか？</dt>
+        <dd>すべてのデータはデバイス内にのみ保存されます。外部サーバーへの送信は行っていません。</dd>
+      </div>
+      <div class="faq-item">
+        <dt>アカウント登録は必要ですか？</dt>
+        <dd>不要です。個人情報の登録なしにすぐご利用いただけます。</dd>
+      </div>
+      <div class="faq-item">
+        <dt>データのバックアップはできますか？</dt>
+        <dd>現在非対応です。アンインストールするとデータが失われますのでご注意ください。</dd>
+      </div>
+      <div class="faq-item">
+        <dt>プッシュ通知は何に使われますか？</dt>
+        <dd>休憩タイマーの終了通知のみに使用します。マーケティング通知は送信しません。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p class="contact">バグ報告・ご要望は <a href="mailto:otakekub@gmail.com">otakekub@gmail.com</a> までお気軽にどうぞ。</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 kubotake &nbsp;|&nbsp; <a href="privacy.html">プライバシーポリシー</a></p>
+</footer>
+
+</body>
+</html>
